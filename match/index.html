@@ -106,7 +106,7 @@ font: 700 2.375em/1.38 Montserrat;
 <div class="profile">
     <img src="images/avatar.jpg" id="avatar">
     <div id="title" style="top: 10;font: 700 1.5em/1.38 Montserrat;">You got matched with...</div>
-    <div id="title" style="top: 80;color:#F8E71C;">Henry Boldiszar</div>
+    <div class="lolzard" id="title" style="top: 80;color:#F8E71C;">Henry Boldiszar</div>
 
     <a id="title" style="top: 200;font: 700 1.5em/1.38 Montserrat;" href="mailto:henry@ocean.ink">henry@ocean.ink</a>
 </div>
@@ -135,6 +135,11 @@ i++;
 );
 $('#loader').delay("10650").fadeOut();
 $('.profile').delay("11000").fadeIn();
+var lol = Math.floor(Math.random()*10);
+console.log(lol);
+if(lol < 5){
+  $(".lolzard").delay("11000").empty().text('Will Smith');
+}
 </script>
 </body>
 </html>
